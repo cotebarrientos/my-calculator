@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url(../fonts/Orbitron-Regular.ttf) format('truetype');
+}
+
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(to bottom right,#b87ae8 0,#f1a4a4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#calc__container {
+    background-color: #ececec;
+    border: 2px solid #d9d9d9;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    gap: 2px;
+    padding: 25px 8px;
+}
+
+#display__operation {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: 'Orbitron', sans-serif;
+    color: #36bbe3;
+    font-size: 40px;
+    margin: 15px 0 10px;
+    padding: 5px 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #1e1e1e;
+    border: 2px solid #101010;
+}
+
+button {
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.number {
+    background-color: #f9a6f3;
+    color: #72067b;
+}
+
+.number:hover {
+    background-color: #ffbffa;
+    border: 2px solid #f9a6f3;
+}
+
+.equals {
+    background-color: #f4ca26;
+    color: #664800;
+}
+
+.equals:hover {
+    background-color: #fbdb5f;
+    border: 2px solid #f4ca26;
+}
+
+.operator {
+    background-color: #b87ae8;
+    color: #40025b;
+}
+
+.operator:hover {
+    background-color: #cb93f7;
+    border: 2px solid #b87ae8;
+}
+
+.all__clear,
+.change__sign,
+.percentage {
+    background-color: #36bbe3;
+    color: #02185b;
+}
+
+.all__clear:hover,
+.change__sign:hover,
+.percentage:hover {
+    background-color: #53cdf2;
+    border: 2px solid #36bbe3;
+}
+
+.clear,
+.decimal {
+    background-color: #ffc4c4;
+    color: #713636;
+}
+
+.clear:hover,
+.decimal:hover {
+    background-color: #ffd5d5;
+    border: 2px solid #ffc4c4;
+}

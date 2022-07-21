@@ -21,11 +21,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    position: relative;
-    font-family: 'Nunito', sans-serif;
-    background-image: linear-gradient(to bottom right,#b87ae8 0,#f1a4a4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif; 
 }
 
 #container {
@@ -34,7 +30,11 @@ body {
     align-content: center;
     align-items: center;
     height: 100vh;
+    min-height: 600px;
     overflow: hidden;
+    background-image: linear-gradient(to bottom right,#b87ae8 0,#f1a4a4);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #calc__container {
@@ -127,4 +127,19 @@ button {
 .decimal:hover {
     background-color: #ffd5d5;
     border: 2px solid #ffc4c4;
+}
+
+/* Media Query */
+@media only screen and (max-width: 450px) {
+    #calc__container {
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: minmax(80px, auto) repeat(5, 60px);
+    }
+    #display__operation {
+        font-size: 30px;
+    }
+    button {
+        font-size: 25px;
+    }
 }

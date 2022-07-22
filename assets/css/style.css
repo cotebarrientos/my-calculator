@@ -56,13 +56,17 @@ body {
     align-items: flex-end;
     font-family: 'Orbitron', sans-serif;
     color: #36bbe3;
-    font-size: 40px;
+    font-size: 38px;
     margin: 15px 0 10px;
     padding: 5px 8px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #1e1e1e;
     border: 2px solid #101010;
+}
+
+.previous-value {
+    font-size: 20px;
 }
 
 button {
@@ -138,6 +142,9 @@ button {
     }
     #display__operation {
         font-size: 30px;
+    }
+    .previous-value {
+        font-size: 16px;
     }
     button {
         font-size: 25px;

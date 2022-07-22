@@ -6,6 +6,7 @@ const previousValue = document.querySelector('.previous-value');
 const currentValue = document.querySelector('.current-value');
 const operandButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
+window.addEventListener("keydown", handleKeyPress);
 
 const equalBtn = document.querySelector('.equals');
 
@@ -21,6 +22,10 @@ const allClearBtn = document.querySelector('.all__clear');
 allClearBtn.addEventListener('click', allClear);
 
 const clearBtn = document.querySelector('.clear');
+
+clearBtn.addEventListener('click', () => {
+    clear();
+})
 
 const changeSignBtn = document.querySelector('.change__sign');
 
@@ -130,6 +135,20 @@ function allClear() {
     previousValue.textContent = "";
 }
 
+function clear() {
+    if (currentNum !== "") {
+      currentNum = currentNum.slice(0, -1);
+      currentValue.textContent = currentNum;
+      if (currentNum === "") {
+        currentValue.textContent = "0";
+      }
+    }
+    if (currentNum === "" && previousNum !== "" && operator === "") {
+      previousNum = previousNum.slice(0, -1);
+      currentValue.textContent = previousNum;
+    }
+}
+
 function addDecimal() {
     if (!currentNum.includes('.')) {
         currentNum += ".";
@@ -141,5 +160,39 @@ function changeSign() {
     if(currentNum !== "") {
         currentNum = (currentNum * -1).toString();
         currentValue.textContent = currentNum;
+    }
+}
+
+function handleKeyPress(e) {
+    e.preventDefault();
+    if (e.key >= 0 && e.key <= 9) {
+        handleOperand(e.key);
+    }
+    if (
+      e.key === "Enter" ||
+      (e.key === "=" && currentNum != "" && previousNum != "")
+    ) {
+      operate();
+    }
+    if (e.key === "+" || e.key === "-" || e.key === "/") {
+      handleOperator(e.key);
+    }
+    if (e.key === "*") {
+      handleOperator("x");
+    }
+    if (e.key === "%") {
+        handleOperator("%");
+    }
+    if (e.key === ".") {
+      addDecimal();
+    }
+    if (e.key === "Delete") {
+        allClear();
+    }
+    if (e.key === "Backspace") {
+      clear();
+    }
+    if (e.key === "?") {
+        changeSign();
     }
 }

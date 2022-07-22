@@ -21,7 +21,18 @@ const allClearBtn = document.querySelector('.all__clear');
 allClearBtn.addEventListener('click', allClear);
 
 const clearBtn = document.querySelector('.clear');
+
+const changeSignBtn = document.querySelector('.change__sign');
+
+changeSignBtn.addEventListener('click', () => {
+    changeSign();
+});
+
 const decimalBtn = document.querySelector('.decimal');
+
+decimalBtn.addEventListener('click', () => {
+    addDecimal();
+});
 
 operandButtons.forEach(btn => {
     btn.addEventListener('click', e => {
@@ -117,4 +128,18 @@ function allClear() {
     operator = "";
     currentValue.textContent = "0";
     previousValue.textContent = "";
+}
+
+function addDecimal() {
+    if (!currentNum.includes('.')) {
+        currentNum += ".";
+        currentValue.textContent = currentNum;
+    }
+}
+
+function changeSign() {
+    if(currentNum !== "") {
+        currentNum = (currentNum * -1).toString();
+        currentValue.textContent = currentNum;
+    }
 }

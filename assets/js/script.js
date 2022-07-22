@@ -17,6 +17,9 @@ equalBtn.addEventListener('click', () => {
 });
 
 const allClearBtn = document.querySelector('.all__clear');
+
+allClearBtn.addEventListener('click', allClear);
+
 const clearBtn = document.querySelector('.clear');
 const decimalBtn = document.querySelector('.decimal');
 
@@ -87,4 +90,12 @@ function displayResults() {
 
 function roundNumber(num) {
     return Math.round(num * 100000) / 100000;
+}
+
+function allClear() {
+    currentNum = "";
+    previousNum = "";
+    operator = "";
+    currentValue.textContent = "0";
+    previousValue.textContent = "";
 }

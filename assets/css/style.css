@@ -46,6 +46,7 @@ body {
     grid-template-rows: minmax(100px, auto) repeat(5, 80px);
     gap: 2px;
     padding: 25px 8px;
+    box-shadow: 0px 8px 15px 5px rgba(71, 8, 77, 0.3);
 }
 
 #display__operation {
@@ -57,7 +58,7 @@ body {
     height: 100px;
     font-family: 'Orbitron', sans-serif;
     color: #36bbe3;
-    margin: 15px 0 10px;
+    margin: 15px 0 25px;
     padding: 5px 8px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

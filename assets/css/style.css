@@ -54,15 +54,19 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+    height: 100px;
     font-family: 'Orbitron', sans-serif;
     color: #36bbe3;
-    font-size: 38px;
     margin: 15px 0 10px;
     padding: 5px 8px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #1e1e1e;
     border: 2px solid #101010;
+}
+
+.current-value {
+    font-size: 38px;
 }
 
 .previous-value {
@@ -140,7 +144,7 @@ button {
         grid-template-columns: repeat(4, 80px);
         grid-template-rows: minmax(80px, auto) repeat(5, 60px);
     }
-    #display__operation {
+    .current-value {
         font-size: 30px;
     }
     .previous-value {

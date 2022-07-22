@@ -11,7 +11,7 @@ const equalBtn = document.querySelector('.equals');
 
 equalBtn.addEventListener('click', () => {
     // Checking before executing the mathematical operation
-    if(currentNum != "" && previousNum != "") {
+    if (currentNum != "" && previousNum != "") {
         operate();
     }
 });
@@ -30,8 +30,13 @@ operandButtons.forEach(btn => {
 });
 
 function handleOperand(number) {
+    if (previousNum !== "" && currentNum !== "" && operator === "") {
+        previousNum = "";
+        currentValue.textContent = currentNum;
+    }
+
     // Prevents the numbers from going off-screen
-    if(currentNum.length <= 11){
+    if (currentNum.length <= 11) {
         currentNum += number;
         currentValue.textContent = currentNum;
         console.log(number);
@@ -44,32 +49,45 @@ operatorButtons.forEach(btn => {
     });
 });
 
-function handleOperator(op) {
-    operator = op;
-    previousNum = currentNum;
+function operatorValidation(input) {
+    operator = input;
     previousValue.textContent = previousNum + " " + operator;
-    currentNum = "";
     currentValue.textContent = "";
+    currentNum = "";
+}
+
+function handleOperator(op) {
+    if (previousNum === "") {
+        previousNum = currentNum;
+        operatorValidation(op);
+    } else if (currentNum === "") {
+        operatorValidation(op);
+    } else {
+        operate();
+        operator = op;
+        previousValue.textContent = previousNum + " " + operator;
+        currentValue.textContent = "";
+    }
 }
 
 function operate() {
     previousNum = Number(previousNum);
     currentNum = Number(currentNum);
 
-    if(operator === "+"){
+    if (operator === "+") {
         previousNum = previousNum + currentNum;
-    } else if(operator === "-"){
+    } else if (operator === "-"){
         previousNum = previousNum - currentNum;
-    } else if(operator === "x"){
+    } else if (operator === "x") {
         previousNum = previousNum * currentNum;
-    } else if(operator === "÷"){
-        if(currentNum <= 0) {
+    } else if (operator === "÷") {
+        if (currentNum <= 0) {
             previousNum = `Error! (ง︡'-'︠)ง`;
             displayResults();
             return;
         }
         previousNum = previousNum / currentNum;
-    } else if(operator === "%"){
+    } else if (operator === "%"){
         previousNum = previousNum /100 * currentNum;
     }
 
@@ -79,13 +97,14 @@ function operate() {
 }
 
 function displayResults() {
-    previousValue.textContent = "";
-    operator = "";
-    if(previousNum.length <= 11){
+    if (previousNum.length <= 11) {
         currentValue.textContent = previousNum;
     } else {
         currentValue.textContent = previousNum.slice(0, 16) + "...";
     }
+    previousValue.textContent = "";
+    operator = "";
+    currentNum = "";
 }
 
 function roundNumber(num) {

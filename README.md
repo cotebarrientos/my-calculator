@@ -15,6 +15,9 @@ taught by [**Brainnest**](https://www.brainnest.consulting/).
 
 1. [**Project Purpose**](#project-purpose)
 2. [**Features**](#features)
+   - [Buttons](#buttons)
+   - [Functionality](#functionality)
+   - [Color Scheme](#color-scheme)
 3. [**Technologies Used**](#technologies-used)
    - [Languages](#languages)
    - [Libraries](#libraries)
@@ -32,7 +35,104 @@ taught by [**Brainnest**](https://www.brainnest.consulting/).
 
 ## Project Purpose
 
+The main purpose of this project is to create a calculator capable of performing simple calculations.
+
+### Project Structure
+
+<img src="https://github.com/cotebarrientos/my-calculator/blob/main/doc/calc-project-structure.png?raw=true" alt="Calc working" width="250px">
+
+[**Back to top**](#table-of-contents)
+
 ## Features
+
+### Buttons
+
+The calculator consists of the following
+
+- 10 buttons for numbers **(0 to 9)**
+- 5 buttons to perform mathematical operations, which are:
+  - Addition **(+)**
+  - Subtract **(-)**
+  - Multiply **(x)**
+  - Divide **(÷)**
+  - Calculate percentage **(%)**
+- 1 button to display the results **(=)**
+- 2 buttons to clear the calculator screen, one removes everything **(AC)** and the
+  other removes only the last number **(←)**.
+- 1 button to change the sign of a number **(+/-)**.
+- 1 button to add decimals **(.)**.
+
+### Functionality
+
+This calculator has these functions:
+
+- Performs simple calculations.
+- It has keyboard support.
+- It is responsive, adapting to mobile devices.
+- The calculator screen shows the operations you are performing, and also displays a special message
+  if you try to divide a number by 0.
+
+|                                                              Working Normally                                                              |
+| :----------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/cotebarrientos/my-calculator/blob/main/doc/calculator_working.png?raw=true" alt="Calc working" width="350px"> |
+|                                              The calculator displays mathematical operations                                               |
+
+|                                                           Special Error Message                                                           |
+| :---------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/cotebarrientos/my-calculator/blob/main/doc/calculator_error.png?raw=true" alt="Error message" width="360px"> |
+|                                        This message appears when you try to divide a number by 0.                                         |
+
+### Color Scheme
+
+**App Background**
+
+|                                             #B87AE8                                              |                                             #F1A4A4                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#B87AE8](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23b87ae8.png?raw=true) | ![#F1A4A4](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23f1a4a4.png?raw=true) |
+
+**Calculator Background**
+
+|                                              #ECECEC                                              |                                             #D9D9D9                                              |
+| :-----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#ECECEC ](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23ececec.png?raw=true) | ![#D9D9D9](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23d9d9d9.png?raw=true) |
+
+**Screen**
+
+|                                             #36BBE3                                              |                                             #1E1E1E                                              |                                              #101010                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: |
+| ![#36BBE3](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%2336bbe3.png?raw=true) | ![#1E1E1E](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%231e1e1e.png?raw=true) | ![#101010 ](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23101010.png?raw=true) |
+
+**Number Buttons**
+
+|                                             #F9A6F3                                              |                                             #72067B                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#F9A6F3](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23f9a6f3.png?raw=true) | ![#72067B](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%2372067b.png?raw=true) |
+
+**Operator Buttons**
+
+|                                             #F4CA26                                              |                                             #664800                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#F4CA26](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23f4ca26.png?raw=true) | ![#664800](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23664800.png?raw=true) |
+
+**Equal Button**
+
+|                                             #B87AE8                                              |                                             #40025B                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#B87AE8](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23b87ae8.png?raw=true) | ![#40025B](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%2340025b.png?raw=true) |
+
+**All Clear, Change Number Sign and Percentage Buttons**
+
+|                                             #36BBE3                                              |                                             #02185B                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#36BBE3](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%2336bbe3.png?raw=true) | ![#02185B](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%2302185b.png?raw=true) |
+
+**Clear one space and Decimal Buttons**
+
+|                                             #FFC4C4                                              |                                             #713636                                              |
+| :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
+| ![#FFC4C4](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23ffc4c4.png?raw=true) | ![#713636](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23713636.png?raw=true) |
+
+[**Back to top**](#table-of-contents)
 
 ## Technologies Used
 
@@ -54,6 +154,8 @@ taught by [**Brainnest**](https://www.brainnest.consulting/).
 - Git
 - Adobe Photoshop portable version 13.0.0
 - Affinity designer version 1.7.4
+
+[**Back to top**](#table-of-contents)
 
 ## Deployment
 
@@ -87,6 +189,8 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 5. On selecting Main Branch the page is automatically refreshed, the website is now deployed.
 6. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 7. Well done!, you've deployed this project.
+
+[**Back to top**](#table-of-contents)
 
 ## Testing
 
@@ -132,6 +236,8 @@ as tests on the look of the website to ensure that the colors and fonts used wou
 |   Firefox    |      Good      |    Good    |    Good     |
 | Avast Secure |      Good      |    Good    |    Good     |
 |     Edge     |      Good      |    Good    |    Good     |
+
+[**Back to top**](#table-of-contents)
 
 ## Credits
 

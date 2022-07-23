@@ -33,10 +33,9 @@ body {
     min-height: 600px;
     overflow: hidden;
     background-image: linear-gradient(to bottom right,#b87ae8 0,#f1a4a4);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
+/* Calculator frame */
 #calc__container {
     background-color: #ececec;
     border: 2px solid #d9d9d9;
@@ -49,6 +48,7 @@ body {
     box-shadow: 0px 8px 15px 5px rgba(71, 8, 77, 0.3);
 }
 
+/* Calculator Screen */
 #display__operation {
     grid-column: 1 / -1;
     display: flex;
@@ -82,6 +82,7 @@ button {
     cursor: pointer;
 }
 
+/* Number Buttons */
 .number {
     background-color: #f9a6f3;
     color: #72067b;
@@ -92,6 +93,7 @@ button {
     border: 2px solid #f9a6f3;
 }
 
+/* Equal Button */
 .equals {
     background-color: #f4ca26;
     color: #664800;
@@ -102,6 +104,7 @@ button {
     border: 2px solid #f4ca26;
 }
 
+/* Operator Buttons */
 .operator {
     background-color: #b87ae8;
     color: #40025b;
@@ -112,6 +115,7 @@ button {
     border: 2px solid #b87ae8;
 }
 
+/* All Clear, Change Number Sign and Percentage Button */
 .all__clear,
 .change__sign,
 .percentage {
@@ -126,6 +130,7 @@ button {
     border: 2px solid #36bbe3;
 }
 
+/* Clear one space and Decimal Buttons */
 .clear,
 .decimal {
     background-color: #ffc4c4;

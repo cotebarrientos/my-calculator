@@ -4,8 +4,10 @@ let operator = "";
 
 const previousValue = document.querySelector('.previous-value');
 const currentValue = document.querySelector('.current-value');
+
 const operandButtons = document.querySelectorAll('.number');
 const operatorButtons = document.querySelectorAll('.operator');
+// Activate keyboard support
 window.addEventListener("keydown", handleKeyPress);
 
 const equalBtn = document.querySelector('.equals');
@@ -25,7 +27,7 @@ const clearBtn = document.querySelector('.clear');
 
 clearBtn.addEventListener('click', () => {
     clear();
-})
+});
 
 const changeSignBtn = document.querySelector('.change__sign');
 
@@ -39,6 +41,7 @@ decimalBtn.addEventListener('click', () => {
     addDecimal();
 });
 
+// Target number buttons
 operandButtons.forEach(btn => {
     btn.addEventListener('click', e => {
         handleOperand(e.target.textContent);
@@ -55,10 +58,10 @@ function handleOperand(number) {
     if (currentNum.length <= 11) {
         currentNum += number;
         currentValue.textContent = currentNum;
-        console.log(number);
     }
 }
 
+// Target operator buttons
 operatorButtons.forEach(btn => {
     btn.addEventListener('click', e => {
         handleOperator(e.target.textContent);

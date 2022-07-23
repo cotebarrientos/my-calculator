@@ -4,12 +4,20 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My calculator: an app to perform simple math operations">
         <!-- Favicon -->
         <link
             rel="icon"
             type="image/png"
             href="./assets/images/favicon.png"
             sizes="16x16"
+        >
+        <!-- Font Awesome CDN -->
+        <link 
+            rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
         >
         <!-- CSS External File -->
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -25,10 +33,12 @@
     <body>
         <main id="container">
             <section id="calc__container">
+                <!-- Calculator screen -->
                 <article id="display__operation">
                     <div class="previous-value"></div>
                     <div class="current-value">0</div>
                 </article>
+                <!-- Calculator buttons -->
                 <button class="all__clear">AC</button>
                 <button class="change__sign">+/-</button>
                 <button class="operator">%</button>
@@ -46,7 +56,9 @@
                 <button class="number">3</button>
                 <button class="operator">+</button>
                 <button class="number">0</button>
-                <button class="clear">C</button>
+                <button class="clear" aria-label="clear">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
                 <button class="decimal">.</button>
                 <button class="equals">=</button>
             </section>

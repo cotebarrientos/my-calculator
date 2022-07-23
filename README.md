@@ -2,10 +2,12 @@
 
 ## Brainnest: Frontend Development Industry Training
 
+![Mockups](https://github.com/cotebarrientos/my-calculator/blob/main/doc/calc-mockup.png?raw=true)
+
 This repository contains my final assignment for the **Frontend Development industry training program**
 taught by [**Brainnest**](https://www.brainnest.consulting/).
 
-**You can visit this website by clicking [here]().**
+**You can visit this website by clicking [here](https://cotebarrientos.github.io/my-calculator/).**
 
 ---
 
@@ -115,9 +117,11 @@ I used <a href="https://jshint.com/" target="_blank">JShint</a> to validate my J
 
 ### Chrome's DevTools Lighthouse Report
 
+![Lighthouse report](https://github.com/cotebarrientos/my-calculator/blob/main/doc/calc-lighthouse-report.png?raw=true)
+
 The website is performing quite well as reported by this tool.
 
-## Browser Compatibility
+### Browser Compatibility
 
 In order to ensure that the calculator would work properly in the following browsers, responsiveness tests and button were done, as well
 as tests on the look of the website to ensure that the colors and fonts used would display correctly.

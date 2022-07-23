@@ -18,6 +18,7 @@ taught by [**Brainnest**](https://www.brainnest.consulting/).
    - [Buttons](#buttons)
    - [Functionality](#functionality)
    - [Color Scheme](#color-scheme)
+   - [Fonts](#fonts)
 3. [**Technologies Used**](#technologies-used)
    - [Languages](#languages)
    - [Libraries](#libraries)
@@ -39,7 +40,7 @@ The main purpose of this project is to create a calculator capable of performing
 
 ### Project Structure
 
-<img src="https://github.com/cotebarrientos/my-calculator/blob/main/doc/calc-project-structure.png?raw=true" alt="Calc working" width="250px">
+<img src="https://github.com/cotebarrientos/my-calculator/blob/main/doc/calc-project-structure.png?raw=true" alt="Calc working" width="400px">
 
 [**Back to top**](#table-of-contents)
 
@@ -131,6 +132,11 @@ This calculator has these functions:
 |                                             #FFC4C4                                              |                                             #713636                                              |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | ![#FFC4C4](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23ffc4c4.png?raw=true) | ![#713636](https://github.com/cotebarrientos/my-calculator/blob/main/doc/%23713636.png?raw=true) |
+
+### Fonts
+
+- [**Nunito**](https://fonts.google.com/specimen/Nunito?query=nuni): This font was used for the calculator buttons.
+- [**Orbitron**](https://fonts.google.com/specimen/Orbitron?query=orbi): This font was used to display numerical operations and results on the calculator's screen.
 
 [**Back to top**](#table-of-contents)
 

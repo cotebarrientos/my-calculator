@@ -113,6 +113,22 @@ I used <a href="https://jshint.com/" target="_blank">JShint</a> to validate my J
     - Largest function has 19 statements in it, while the median is 3.
     - The most complex function has a cyclomatic complexity value of 16 while the median is 1.
 
+### Chrome's DevTools Lighthouse Report
+
+The website is performing quite well as reported by this tool.
+
+## Browser Compatibility
+
+In order to ensure that the calculator would work properly in the following browsers, responsiveness tests and button were done, as well
+as tests on the look of the website to ensure that the colors and fonts used would display correctly.
+
+|   Browser    | Responsiveness | Appearance | Performance |
+| :----------: | :------------: | :--------: | :---------: |
+|    Chrome    |      Good      |    Good    |    Good     |
+|   Firefox    |      Good      |    Good    |    Good     |
+| Avast Secure |      Good      |    Good    |    Good     |
+|     Edge     |      Good      |    Good    |    Good     |
+
 ## Credits
 
 ### Media
@@ -132,8 +148,12 @@ These websites were really useful to troubleshooting the issues I faced:
 
 These blogs helped me to understand more about how to create a calculator.
 
-- [Section](https://www.section.io/engineering-education/building-a-calculator-a-javascript-project-for-beginners/)
-- [Dev](https://dev.to/javascriptacademy/create-a-simple-calculator-using-html-css-and-javascript-4o7k)
+- [Doro Onome - Section](https://www.section.io/engineering-education/building-a-calculator-a-javascript-project-for-beginners/)
+- [Adam Nagy - Dev](https://dev.to/javascriptacademy/create-a-simple-calculator-using-html-css-and-javascript-4o7k)
+
+This interactive calculator was really interesting
+
+- [Cristian Vasquez - Code Pen](https://codepen.io/cristian_vasquez/pen/dyvELOy)
 
 [**Back to top**](#table-of-contents)
 
